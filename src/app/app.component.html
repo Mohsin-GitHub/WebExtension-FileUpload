@@ -1,0 +1,24 @@
+﻿<!--<h1>
+  
+</h1>-->
+<form (ngSubmit)="onSubmit()" #f="ngForm">
+   <div>
+    ITSM
+     </div>
+  <div> 
+     <input type="file" (change)="fileChange($event)" name="ymlFile" placeholder="Please select file to upload" />
+  </div>
+  <div>
+    <input type="file" (change)="multipleFileChange($event)" multiple name="implPlan" placeholder="Please select file to upload" />
+  </div>
+  <div>
+    <button type="submit" id="btnUploadFile">
+      Upload
+    </button>
+  </div>
+  <div>
+    <h1>
+      {{title}}
+    </h1>
+  </div>
+</form>

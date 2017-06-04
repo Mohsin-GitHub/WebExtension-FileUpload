@@ -1,0 +1,41 @@
+﻿{
+
+  "manifest_version": 2,
+
+  "name": "my Test app",
+  "version": "0.1.4",
+  "description": "A modern web extension for pinning pages on Pinboard (pinboard.in) with Firefox.",
+  "homepage_url": "https://github.com/Cito/Pinboard-Pin",
+
+  //"options_ui": {
+  //  "page": "/index.html?page=options"
+  //},
+
+  //"background": {
+  //  "page": "/index.html?page=background"
+  //},
+
+  "browser_action": {
+    "default_title": "My Test App",
+    "default_icon": {
+      "16": "/img/pinboard_idle_16.png",
+      "24": "/img/pinboard_idle_24.png",
+      "32": "/img/pinboard_idle_32.png",
+      "48": "/img/pinboard_idle_48.png",
+      "64": "/img/pinboard_idle_64.png",
+      "96": "/img/pinboard_idle_96.png",
+      "128": "/img/pinboard_idle_128.png",
+      "256": "/img/pinboard_idle_256.png"
+    }
+  },
+  "background": {
+    "scripts": [ "/js/background.js" ]
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ]
+
+}
